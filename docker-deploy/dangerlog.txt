@@ -12,3 +12,5 @@ To resolve this issue, we add more condition to make the while loop break. If th
 4. After adding cache in the handling get method, the webpage were unable to load. After using gdb debugging, we realized that the program had return call when the request not in the cache, causeing the function to return immediately before sending or recving anything to the server. To solve this, we need to change the logic for handing cache. 
 
 5. When we tested the website with chucked response, the whole chucked response with unprintable characters was stored in the cache, this is because we did not check whether the response is chucked and cached the response which should not be cache
+
+6. Reading error handling, we handle the case when hostname is invalid, can not connect to the host, etc. We also consider the case when the request is invalid format. 
