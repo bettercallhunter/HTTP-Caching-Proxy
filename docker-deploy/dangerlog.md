@@ -24,7 +24,3 @@ To resolve this issue, we add more condition to make the while loop break. If th
 <p>
 5. When we tested the website with chucked response, the whole chucked response with unprintable characters was stored in the cache, this is because we did not check whether the response is chucked and cached the response which should not be cache
 </p>
-
-<p>
-6. Reading error handling, we handle the case when hostname is invalid, can not connect to the host, etc. We also consider the case when the request is invalid format. 
-</p>
